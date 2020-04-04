@@ -15,8 +15,6 @@ defmodule Islands.Response do
 
   @type t ::
           {}
-          | {:ok, :player1_updated}
-          | {:ok, :player2_updated}
           | {:ok, :player2_added}
           | {:error, any}
           | {:hit | :miss, Island.type() | :none, :no_win | :win}

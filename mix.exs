@@ -4,8 +4,8 @@ defmodule Islands.Response.MixProject do
   def project do
     [
       app: :islands_response,
-      version: "0.1.8",
-      elixir: "~> 1.10",
+      version: "0.1.9",
+      elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       name: "Islands Response",
       source_url: source_url(),
@@ -44,12 +44,12 @@ defmodule Islands.Response.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:mix_tasks,
-       github: "RaymondLoranger/mix_tasks", only: :dev, runtime: false},
-      {:ex_doc, "~> 0.22", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.22", only: :dev, runtime: false},
       {:islands_config, "~> 0.1", runtime: false},
-      {:islands_island, "~> 0.1"}
+      {:islands_island, "~> 0.1"},
+      {:mix_tasks,
+       github: "RaymondLoranger/mix_tasks", only: :dev, runtime: false}
     ]
   end
 end

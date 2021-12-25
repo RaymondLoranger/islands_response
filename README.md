@@ -1,6 +1,6 @@
 # Islands Response
 
-Defines the `response` type for the _Game of Islands_.
+Defines the response type for the _Game of Islands_.
 
 ## Installation
 
